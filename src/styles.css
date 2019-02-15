@@ -1,8 +1,73 @@
-/* add css styles here (optional) */
+.container {
+  position: relative;
+  width: min-content;
+}
 
-.test {
-  display: inline-block;
-  margin: 2em auto;
-  border: 2px solid #000;
-  font-size: 2em;
+.input {
+  padding: 10px;
+  display: block;
+  font-size: 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+.editButton {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(120%, -30%);
+  border: none;
+  background-color: transparent;
+  color: lightgray;
+  cursor: pointer;
+  width: max-content;
+}
+
+.editButton:hover {
+  color: gray;
+}
+
+.editButton > svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  fill: lightgray;
+  transform: translateX(100%);
+}
+
+.editButton:hover > svg {
+  fill: gray;
+}
+
+.acceptButton, .rejectButton {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.acceptButton > svg, .rejectButton > svg {
+  width: 1.5em;
+  height: 1.5em;
+  opacity: .7;
+}
+
+.acceptButton {
+  transform: translate(100%, -50%);
+  fill: green;
+}
+
+.rejectButton {
+  transform: translate(200%, -50%);
+  fill: red;
+}
+
+.acceptButton:hover > svg, .rejectButton:hover > svg {
+  opacity: 1;
 }
