@@ -15,12 +15,23 @@ npm install --save react-edit-button
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-edit-button'
+import EditButton from 'react-edit-button'
 
 class Example extends Component {
+  state = {
+    text: 'edit me'
+  }
+  onAccept = (text) => {
+    this.setState({ text })
+  }
+  onReject = (prevText) => {
+    console.log(prevText)
+  }
   render () {
     return (
-      <MyComponent />
+      <EditButton onAccept={handleOnAccept} onReject={handleOnReject}>
+        <span>{ this.state.text }</span>
+      </EditButton>
     )
   }
 }
@@ -28,4 +39,4 @@ class Example extends Component {
 
 ## License
 
-MIT © [geoffchan23](https://github.com/geoffchan23)
+MIT © [stackfive](https://github.com/stackfive)
