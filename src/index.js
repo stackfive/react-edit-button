@@ -109,7 +109,9 @@ export default class EditButton extends Component {
   }
   onReject = () => {
     console.log('onReject', this.state.prevInputValue);
-    this.props.onReject(this.state.prevInputValue);
+    if (this.props.onReject) {
+      this.props.onReject(this.state.prevInputValue);
+    }
     this.setState({
       editMode: false,
       inputValue: this.state.prevInputValue,

@@ -1,7 +1,7 @@
 {
   "name": "react-edit-button",
-  "version": "1.0.0",
-  "description": "A React component for making any html element&#x27;s text editable",
+  "version": "1.0.1",
+  "description": "A React wrapper component for making any html element&#x27;s text editable",
   "author": "geoffchan23",
   "license": "MIT",
   "repository": "stackfive/react-edit-button",
