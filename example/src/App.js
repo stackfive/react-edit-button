@@ -27,12 +27,24 @@ export default class App extends Component {
   }
   render () {
     const EditButtonProps = {
-      onContainerClick: this.handleOnContainerClick,
-      onEditButtonClick: this.handleEditButtonClick,
+      // inputProps = {
+      //   value: this.state.text,
+      //   placeholder: 'Enter text',
+      //   onChange: this.handleInputChange,
+      // },
+      // editButtonProps = {
+      //   text: 'Edit',
+      //   icon: undefined,
+      // },
+      // containerProps = {
+      //   // any properties you want to add to the container div element
+      // },
+      // onContainerClick: this.handleOnContainerClick,
+      // onEditButtonClick: this.handleEditButtonClick,
       // hideEditButton: true,
       // editMode: this.state.editMode,
       onAccept: this.onAccept,
-      onReject: this.onReject,
+      // onReject: this.onReject,
     }
     return (
       <div style={{ padding: '2em' }}>
