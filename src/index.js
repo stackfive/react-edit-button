@@ -55,7 +55,7 @@ export default class EditButton extends Component {
     hideEditButton: PropTypes.bool,
     editMode: PropTypes.bool,
     onAccept: PropTypes.func.isRequired,
-    onReject: PropTypes.func.isRequired,
+    onReject: PropTypes.func,
   }
 
   state = {
