@@ -46,20 +46,21 @@ class Example extends Component {
 ## Props
 | Prop | Type | Required | Default | Note
 |---|---|---|---|---|
-| onAccept | function | Yes | undefined | N/A
-| onReject | function | No | undefined | N/A
-| containerProps | object | No | undefined | N/A
-| inputProps | object | No | {} | N/A
-| inputProps.value | string || number | No | undefined | N/A
-| inputProps.placeholder | string | No | undefined | N/A
-| inputProps.onChange | function | No | undefined | N/A
-| editButtonProps | object | No | {} | N/A
-| editButtonProps.text | string | No | undefined | N/A
-| editButtonProps.icon | any | No | undefined | N/A
-| onEditButtonClick | function | No | undefined | N/A
-| onContainerClick | function | No | undefined | N/A
-| hideEditButton | boolean | No | undefined | N/A
-| editMode | boolean | No | undefined | N/A
+| containerProps | object | No | undefined | Props applied to the container <div> element.
+| editButtonProps | object | No | {} | Props applied to the edit button.
+| editButtonProps.text | string | No | 'Edit' | Replace the edit button text.
+| editButtonProps.icon | any | No | <svg> | Replace the default edit button icon with anything.
+| editMode | boolean | No | undefined | Manually control edit mode.
+| hideEditButton | boolean | No | undefined | Manually control showing and hiding the edit button. 
+| hoverToShowEditButton | boolean | No | false | Will hide the edit button by default and show it on hover of the wrapped element.
+| inputProps | object | No | {} | Props for the input element.
+| inputProps.onChange | function | No | undefined | Function fired on input change.
+| inputProps.placeholder | string | No | undefined | Input placeholder text.
+| inputProps.value | string || number | No | undefined | Value shown in the input (can be different than displayed text in wrapped elelent)
+| onAccept | function | Yes | undefined | Function that is fired when the accept button is clicked.
+| onContainerClick | function | No | undefined | Function that is fired when the content container is clicked.
+| onEditButtonClick | function | No | undefined | Function that fires when the edit button is clicked.
+| onReject | function | No | undefined | Function that is fired when the reject button is clicked.
 
 ## License
 

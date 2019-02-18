@@ -1,6 +1,11 @@
 .container {
   position: relative;
   width: max-content;
+  padding-right: 60px;
+}
+
+.container:hover .editButton.hoverToShow {
+  display: block;
 }
 
 .input {
@@ -10,19 +15,23 @@
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .editButton {
   position: absolute;
   right: 0;
   top: 0;
-  transform: translate(120%, -30%);
+  transform: translate(-50%, -30%);
   border: none;
   background-color: transparent;
   color: lightgray;
   cursor: pointer;
   width: max-content;
+}
+
+.hoverToShow {
+  display: none;
 }
 
 .editButton:hover {
@@ -59,12 +68,12 @@
 }
 
 .acceptButton {
-  transform: translate(100%, -50%);
+  transform: translate(-50%, -50%);
   fill: green;
 }
 
 .rejectButton {
-  transform: translate(200%, -50%);
+  transform: translate(70%, -50%);
   fill: red;
 }
 

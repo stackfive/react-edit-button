@@ -45,6 +45,7 @@ export default class App extends Component {
       // editMode: this.state.editMode,
       onAccept: this.onAccept,
       // onReject: this.onReject,
+      hoverToShowEditButton: true,
     }
     return (
       <div style={{ padding: '2em' }}>
